@@ -1,0 +1,120 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg3"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/writenote"
+      android:gravity="center"
+      android:textSize="32sp"
+      />
+
+  <RelativeLayout
+      android:gravity="center"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="30dp"
+      >
+
+    <EditText
+        android:layout_alignParentRight="true"
+        android:id="@+id/et_consignee"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="请输入姓名"
+        android:maxLines="1"
+        />
+    <TextView
+        android:layout_toLeftOf="@id/et_consignee"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="收货人姓名    "
+        />
+  </RelativeLayout>
+  <RelativeLayout
+      android:gravity="center"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      >
+
+    <EditText
+        android:layout_alignParentRight="true"
+        android:id="@+id/et_phonenum"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="请输入手机号"
+        android:inputType="number"
+        android:maxLines="1"
+        />
+
+    <TextView
+        android:layout_toLeftOf="@id/et_phonenum"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="收货人手机号"
+        />
+  </RelativeLayout>
+  <RelativeLayout
+      android:gravity="center"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      >
+
+    <Spinner
+        android:layout_alignParentRight="true"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/district"
+        android:entries="@array/district"
+        />
+    <TextView
+        android:layout_toLeftOf="@id/district"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="所在地区        "
+        />
+  </RelativeLayout>
+  <RelativeLayout
+      android:gravity="center"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      >
+    <EditText
+        android:layout_alignParentRight="true"
+        android:id="@+id/district_detail"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="请输入地址"
+        android:maxLines="1"
+        />
+
+    <TextView
+        android:layout_toLeftOf="@id/district_detail"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="详细的地址    "
+        />
+  </RelativeLayout>
+  <Button
+      android:layout_gravity="center_horizontal"
+      android:id="@+id/btn_sure"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:text="确定购买"
+      />
+
+
+</LinearLayout>

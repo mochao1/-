@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+    
+    <Button 
+        android:id="@+id/btn_add_count_board"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:text="+"
+        android:background="@drawable/btn_add"/>
+    
+    <EditText
+        android:id="@+id/et_num_count_board"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:text="0"
+        android:inputType="number"
+        android:gravity="center"
+        android:maxLines="1"
+        android:background="@drawable/et_num_shape"/>
+    
+    <Button 
+        android:id="@+id/btn_del_count_board"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:text="-"
+        android:background="@drawable/btn_del"/>
+    
+
+</LinearLayout>
